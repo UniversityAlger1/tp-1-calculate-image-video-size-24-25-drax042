@@ -10,7 +10,7 @@
 //   colored video size (based on the unit passed parametter)
 float video(int w, int h, int durationMovie, int durationCredits, int fps, char* unit) {
    // YOUR CODE HERE - BEGIN
-   float resultatOctets = (w * h *  1 * fps) *durationCredits + (w * h * 3 * fps) * (durationMovie); // la section en noir et blanc ne concerne que les credits
+   float resultatOctets = (w * h *  1 * fps) *durationCredits + (w * h * 3 * fps) * (durationMovie - durationCredits); // la section en noir et blanc ne concerne que les credits
 
    // Vérification de l'unité choisie
    if (unit == NULL)
